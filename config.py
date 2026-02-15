@@ -5,9 +5,9 @@ load_dotenv()
 
 class Config:
     # Bot Configuration
-    API_ID = int(os.environ.get("API_ID", "0"))
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+    API_ID = int(os.environ.get("API_ID", "36039536"))
+    API_HASH = os.environ.get("API_HASH", "f9c74f8a38a3b2ea0f2e88fe373b554f")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8502581099:AAFiHqmUCCvH8bR15bmzBzOYCA3LrmcCn2o")
     
     # Database Configuration
     MONGO_URI = os.environ.get("MONGO_URI", "")
