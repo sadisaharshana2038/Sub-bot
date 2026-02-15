@@ -95,7 +95,7 @@ class Config:
     
     # Image URLs for menus
     IMAGES = {
-        "start": "https://telegra.ph/file/example1.jpg",
+        "start": "https://t.me/shprofilterupdate/300",
         "help": "https://telegra.ph/file/example2.jpg",
         "profile": "https://telegra.ph/file/example3.jpg",
         "request": "https://telegra.ph/file/example4.jpg",
