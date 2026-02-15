@@ -20,7 +20,7 @@ class Config:
     FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
     
     # Admin Configuration
-    ADMIN_IDS = [int(x) for x in os.environ.get("ADMIN_IDS", "").split(",") if x.strip()]
+    ADMIN_IDS = [int(x) for x in os.environ.get("ADMIN_IDS", "8107411538").split(",") if x.strip()]
     
     # TMDB API
     TMDB_API_KEY = os.environ.get("TMDB_API_KEY", "")
