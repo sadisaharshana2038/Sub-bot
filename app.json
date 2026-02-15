@@ -1,0 +1,76 @@
+{
+  "name": "Telegram Subtitle Bot",
+  "description": "Advanced Telegram bot for managing and distributing subtitles with dual language support",
+  "repository": "https://github.com/yourusername/subtitle-bot",
+  "logo": "https://telegra.ph/file/subtitle-bot-logo.png",
+  "keywords": [
+    "telegram",
+    "bot",
+    "subtitle",
+    "pyrogram",
+    "mongodb"
+  ],
+  "stack": "heroku-22",
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  },
+  "env": {
+    "API_ID": {
+      "description": "Get from https://my.telegram.org",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Get from https://my.telegram.org",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Get from @BotFather on Telegram",
+      "required": true
+    },
+    "MONGO_URI": {
+      "description": "MongoDB connection URI (MongoDB Atlas recommended)",
+      "required": true
+    },
+    "DATABASE_NAME": {
+      "description": "MongoDB database name",
+      "value": "subtitle_bot",
+      "required": false
+    },
+    "SOURCE_CHANNEL_ID": {
+      "description": "Channel ID where subtitle files are posted (with -100 prefix)",
+      "required": true
+    },
+    "UPDATE_CHANNEL_ID": {
+      "description": "Channel ID for new file notifications",
+      "required": true
+    },
+    "ADMIN_CHANNEL_ID": {
+      "description": "Channel ID for admin requests and notifications",
+      "required": true
+    },
+    "FORCE_SUB_CHANNEL": {
+      "description": "Channel ID for force subscription (with -100 prefix)",
+      "required": true
+    },
+    "ADMIN_IDS": {
+      "description": "Comma-separated Telegram user IDs of admins",
+      "required": true
+    },
+    "TMDB_API_KEY": {
+      "description": "Get from https://www.themoviedb.org/settings/api",
+      "required": true
+    },
+    "BOT_USERNAME": {
+      "description": "Your bot username without @",
+      "required": true
+    }
+  }
+}
