@@ -23,7 +23,7 @@ class Config:
     ADMIN_IDS = [int(x) for x in os.environ.get("ADMIN_IDS", "8107411538").split(",") if x.strip()]
     
     # TMDB API
-    TMDB_API_KEY = os.environ.get("TMDB_API_KEY", "")
+    TMDB_API_KEY = os.environ.get("TMDB_API_KEY", "d2d002918cb1dfef9148bbf4f1abdcdc")
     
     # Bot Settings
     BOT_USERNAME = os.environ.get("BOT_USERNAME", "")
