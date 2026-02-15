@@ -10,7 +10,7 @@ class Config:
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "8502581099:AAFiHqmUCCvH8bR15bmzBzOYCA3LrmcCn2o")
     
     # Database Configuration
-    MONGO_URI = os.environ.get("MONGO_URI", "")
+    MONGO_URI = os.environ.get("MONGO_URI", "mongodb+srv://Sadisa:JRGgclOXbm5KLiHn@cluster0.vexxjgb.mongodb.net/")
     DATABASE_NAME = os.environ.get("DATABASE_NAME", "subtitle_bot")
     
     # Channel Configuration
