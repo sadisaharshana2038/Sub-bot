@@ -5,28 +5,28 @@ load_dotenv()
 
 class Config:
     # Bot Configuration
-    API_ID = int(os.environ.get("API_ID", "0"))
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+    API_ID = int(os.environ.get("API_ID", "36039536"))
+    API_HASH = os.environ.get("API_HASH", "f9c74f8a38a3b2ea0f2e88fe373b554f")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8502581099:AAFiHqmUCCvH8bR15bmzBzOYCA3LrmcCn2o")
     
     # Database Configuration
-    MONGO_URI = os.environ.get("MONGO_URI", "")
+    MONGO_URI = os.environ.get("MONGO_URI", "mongodb+srv://Sadisa:JRGgclOXbm5KLiHn@cluster0.vexxjgb.mongodb.net/")
     DATABASE_NAME = os.environ.get("DATABASE_NAME", "subtitle_bot")
     
     # Channel Configuration
-    SOURCE_CHANNEL_ID = int(os.environ.get("SOURCE_CHANNEL_ID", "0"))
+    SOURCE_CHANNEL_ID = int(os.environ.get("SOURCE_CHANNEL_ID", "-1003839839205"))
     UPDATE_CHANNEL_ID = int(os.environ.get("UPDATE_CHANNEL_ID", "0"))
     ADMIN_CHANNEL_ID = int(os.environ.get("ADMIN_CHANNEL_ID", "0"))
     FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
     
     # Admin Configuration
-    ADMIN_IDS = [int(x) for x in os.environ.get("ADMIN_IDS", "").split(",") if x.strip()]
+    ADMIN_IDS = [int(x) for x in os.environ.get("ADMIN_IDS", "8107411538").split(",") if x.strip()]
     
     # TMDB API
-    TMDB_API_KEY = os.environ.get("TMDB_API_KEY", "")
+    TMDB_API_KEY = os.environ.get("TMDB_API_KEY", "d2d002918cb1dfef9148bbf4f1abdcdc")
     
     # Bot Settings
-    BOT_USERNAME = os.environ.get("BOT_USERNAME", "")
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", "@MySubTest1_bot")
     
     # Messages - Sinhala
     SINHALA = {
